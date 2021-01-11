@@ -1,0 +1,193 @@
+h1 {
+	font-style: bold;
+	text-align: center;
+	color: green;
+}
+
+h2 {
+	font-style: bold;
+	color: green;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top : 10px;
+}
+
+strong {
+	font-style: bold;
+}
+
+
+.para1, .creation, .presentation, .actions, .bref, .demande, .origines, .conc, .detail{
+    width: 600px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto; 
+    text-align: justify;
+    padding: 12px;
+}
+
+.presentation,{
+	line-height: 160%;
+}
+
+.graphique{
+	width: 500px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.sub {
+	padding-bottom: 10px;
+}
+
+.para2 {
+	position: fixed;
+	top: 400px;
+	right: 15px;
+	color: green;
+	background-color: white;
+	border: 3px green solid;
+}
+
+.para3 {
+	width: 600px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto; 
+    text-align: center;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.imgcompa {
+	height: 350px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo {
+	width: 25px;
+}
+
+.contacter {
+	width: 400px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+}
+
+.immail, .imfb, .iminsta{
+	width: 18px;
+	float: left;
+}
+
+body
+{
+	margin: 0px ;
+	padding: 0px;
+	background-color: #CFCFCF;
+	font-family: verdana, sans-serif;
+
+}
+
+nav {
+	width: 100%;
+	background-color: green;
+}
+
+nav > ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li {
+	float: left;
+	position: relative;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: white;
+}
+
+nav >ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+
+nav li {
+	list-style-type: none;
+}
+
+.subhistoire {
+	display: none;
+
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav a{
+	display: inline-block;
+
+}
+
+nav li:hover .subhistoire{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	z-index: auto;
+}
+
+.subhistoire li{
+	border-bottom: 1px solid #CCC;
+}
+
+.subhistoire li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color: black
+	width: auto;
+
+}
+
+.histoire:hover {
+	border-top: 5px solid #FFFF;
+	background-color: RGBa(255,255,255, 0.15);
+}
+
+.er:hover {
+	border-top: 5px solid #FFFF;
+	background-color: RGBa(255,255,255, 0.15);
+}
+
+.projet:hover {
+	border-top: 5px solid #FFFF;
+	background-color: RGBa(255,255,255, 0.15);
+}
+
+.contact:hover {
+	border-top: 5px solid #FFFF;
+	background-color: RGBa(255,255,255, 0.15);
+}
+
+.histoire .subhistoire {
+	background-color: RGB(255,255,255);
+}
+
+.subhistoire li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.histoire .subhistoire li:hover {
+	background-color: green;
+}

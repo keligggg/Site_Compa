@@ -1,0 +1,97 @@
+body
+{
+	margin: 0px ;
+	padding: 0px;
+	background-color: #CFCFCF;
+	font-family: verdana, sans-serif;
+
+}
+
+nav { /*style de la barre de nav*/
+	width: 100%;
+	background-color: green;
+}
+
+nav > ul { /*marging et paddind de la barre*/
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{ 
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li { /*paramétrage des li*/
+	float: left;
+	position: relative;
+}
+
+nav > ul > li > a{ /*style des liens*/
+	padding: 20px 30px;
+	color: white;
+}
+
+nav >ul > li:hover a{ 
+	padding: 15px 30px 20px 30px;
+}
+
+
+nav li { 
+	list-style-type: none;
+}
+
+.sousitem {
+	display: none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav a{
+	display: inline-block;
+}
+
+nav li:hover .sousitem{  /*style items survolés*/
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	z-index: auto;
+}
+
+.sousitem li{ /*paramétrage des sous items*/
+	border-bottom: 1px solid #CCC;
+	width: 150px;
+}
+
+.sousitem li a { /*style des liens des sous items*/
+	padding: 15px 30px;
+	font-size: 13px;
+	color: blue;
+	width: auto;
+
+}
+
+.Item2:hover,
+.Item1:hover,
+.Item3:hover{ /*style des items survolés*/
+	border-top: 5px solid #FFFF;
+	background-color: RGBa(255,255,255, 0.15);
+}
+.Item2 .sousitem { /*style de la barre des sous items*/
+	background-color: RGB(255,255,255);
+
+}
+
+.Item2 li:hover a{ /*style des liens survolés*/
+	color: #EEE;
+	font-weight: bold;
+}
+
+.Item2 .sousitem li:hover { /*style des sous items survolés */
+	background-color: green;
+}
